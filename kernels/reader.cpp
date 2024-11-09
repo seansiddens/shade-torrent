@@ -7,6 +7,9 @@ void kernel_main()
     uint32_t a_addr = get_arg_val<uint32_t>(0);
     uint32_t n_tiles = get_arg_val<uint32_t>(1);
     uint32_t start_tile = get_arg_val<uint32_t>(2);
+    uint32_t uv_addr = get_arg_val<uint32_t>(3);
+    uint32_t uv_noc_x = get_arg_val<uint32_t>(4);
+    uint32_t uv_noc_y = get_arg_val<uint32_t>(5);
 
     // The circular buffers to read the tiles into
     constexpr uint32_t cb_in0 = tt::CB::c_in0;

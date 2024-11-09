@@ -13,7 +13,6 @@ sfpi_inline void compute() {
     for (int i = 0; i < ITERATIONS; i++) {
         vFloat in = dst_reg[i];
         vFloat a = in + 1.0f;
-        a = a * 3.0f;
         vFloat out = a;
         dst_reg[i] = out;
     }
